@@ -1,30 +1,29 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { Badge } from '@/components/ui/badge'
-import { Github, ExternalLink } from 'lucide-react'
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Github, ExternalLink } from "lucide-react";
 
 const projects = [
   {
-    title: 'E-commerce Platform',
-    description: 'A full-stack e-commerce solution built with React and Node.js',
-    technologies: ['React', 'Node.js', 'MongoDB', 'Express'],
-    githubUrl: 'https://github.com/yourusername/ecommerce-platform',
-    liveUrl: 'https://ecommerce-platform.example.com',
+    title: "SaaS | Realtime event tracking in Discord dm ",
+    description: "A full-stack application to track events in Discord DMs",
+    technologies: ["Nextjs", "Neon", "Prisma", "Clerk", "Zod"],
+    githubUrl: "https://github.com/chill-czar/pingpanda",
+    liveUrl: "https://github.com/chill-czar/pingpanda",
   },
   {
-    title: 'Weather App',
-    description: 'A weather application using OpenWeatherMap API',
-    technologies: ['React', 'TypeScript', 'Tailwind CSS'],
-    githubUrl: 'https://github.com/yourusername/weather-app',
-    liveUrl: 'https://weather-app.example.com',
+    title: "Employee Management System",
+    description: " A full-stack application to manage employees",
+    technologies: ["React", "Tailwind CSS", "ContextApi", "LocalStorage"],
+    githubUrl: "https://github.com/chill-czar/employee-management-system",
+    liveUrl: "https://github.com/chill-czar/employee-management-system",
   },
-  {
-    title: 'Task Manager',
-    description: 'A simple task management application with user authentication',
-    technologies: ['Vue.js', 'Firebase', 'Vuex'],
-    githubUrl: 'https://github.com/yourusername/task-manager',
-    liveUrl: 'https://task-manager.example.com',
-  },
-]
+];
 
 export default function ProjectList() {
   return (
@@ -43,7 +42,7 @@ export default function ProjectList() {
                 </Badge>
               ))}
             </div>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 bottom-0">
               <a
                 href={project.githubUrl}
                 target="_blank"
@@ -67,6 +66,5 @@ export default function ProjectList() {
         </Card>
       ))}
     </div>
-  )
+  );
 }
-
