@@ -19,7 +19,7 @@ export default function Header() {
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/" className="text-2xl font-bold text-primary">
           I'am
-          <span> {text} </span>
+          <span className="vt323-regular "> {text} </span>
           <Cursor />
         </Link>
         <nav>
