@@ -11,7 +11,7 @@ import {
 export default function Header() {
   const [text]: [string, TypewriterHelper] = useTypewriter({
     words: ["Sarthak Chaudhari", "Fullstack Developer"],
-    loop: {},
+    loop: true,
   });
 
   return (
