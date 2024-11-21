@@ -1,12 +1,26 @@
+"use client";
+
 import Link from "next/link";
 import { Button } from "./ui/button";
+import {
+  useTypewriter,
+  Cursor,
+  TypewriterHelper,
+} from "react-simple-typewriter";
 
 export default function Header() {
+  const [text]: [string, TypewriterHelper] = useTypewriter({
+    words: ["Sarthak Chaudhari", "Fullstack Developer"],
+    loop: {},
+  });
+
   return (
     <header className="bg-background border-b">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link href="/" className="text-2xl font-bold text-primary">
-          My Portfolio
+          I'am
+          <span> {text} </span>
+          <Cursor />
         </Link>
         <nav>
           <ul className="flex space-x-4">
