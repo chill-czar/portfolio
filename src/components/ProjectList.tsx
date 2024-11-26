@@ -6,22 +6,54 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Github, ExternalLink } from "lucide-react";
+import { Github } from "lucide-react";
 
 const projects = [
   {
     title: "SaaS | Realtime event tracking in Discord dm ",
-    description: "A full-stack application to track events in Discord DMs",
-    technologies: ["Nextjs", "Neon", "Prisma", "Clerk", "Zod"],
+    description:
+      "Developed a real-time event monitoring platform that integrates with Discord to send instant notifications for critical events. Utilized Next.js, React, Prisma, and serverless architecture for efficient event tracking and secure user management.",
+    technologies: [
+      "⚛️ React",
+      "🖥️ Next.js",
+      "🔐 Clerk",
+      "🗃️ Prisma",
+      "📊 Neon",
+      "🔄 Upstash Redis",
+      "🔧 Hono",
+      "🔒 Zod",
+      "🎨 Tailwind CSS",
+      "📋 React Hook Form",
+    ],
     githubUrl: "https://github.com/chill-czar/pingpanda",
-    liveUrl: "https://github.com/chill-czar/pingpanda",
+  },
+  {
+    title: "Real time chat app with socket.io",
+    description:
+      " Built a real-time chat app with React.js, Node.js, and MongoDB, enabling instant message exchange and secure user authentication. Implemented responsive design with Tailwind CSS and deployed the app using Heroku for easy access.",
+    technologies: [
+      "⚛️ React",
+      "🚀 Vite",
+      "🌐 Express",
+      "💬 Socket.io",
+      "🗄️ MongoDB",
+      "🔋 Zustand",
+      "🔗 Node.js",
+      "🛠️ Mongoose",
+      "☁️ Cloudinary",
+      "🔐 JWT",
+      "🔑 Bcrypt.js",
+      "💅 DaisyUI",
+      "🎨 Tailwind CSS",
+    ],
+    githubUrl: "https://github.com/chill-czar/employee-management-system",
   },
   {
     title: "Employee Management System",
-    description: " A full-stack application to manage employees",
-    technologies: ["React", "Tailwind CSS", "ContextApi", "LocalStorage"],
+    description:
+      "Created a web application for managing employee tasks and performance with React and Vite, offering both front-end and back-end integration. Designed intuitive dashboards and secure authentication while optimizing performance metric calculations.",
+    technologies: ["⚛️ React", "⚡ Vite", "🎨 Tailwind CSS", "📦 Context API"],
     githubUrl: "https://github.com/chill-czar/employee-management-system",
-    liveUrl: "https://github.com/chill-czar/employee-management-system",
   },
 ];
 
@@ -51,15 +83,6 @@ export default function ProjectList() {
               >
                 <Github className="mr-1 h-4 w-4" />
                 GitHub
-              </a>
-              <a
-                href={project.liveUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center text-sm text-muted-foreground hover:text-primary"
-              >
-                <ExternalLink className="mr-1 h-4 w-4" />
-                Live Demo
               </a>
             </div>
           </CardContent>

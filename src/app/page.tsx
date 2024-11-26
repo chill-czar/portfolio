@@ -30,19 +30,20 @@ export default function Home() {
                 <ul className="space-y-4">
                   <li>
                     <strong>Frontend:</strong> Next.js, React, TypeScript,
-                    JavaScript, Redux, Tailwind CSS
+                    JavaScript, Socket.io, Zustand, Zod, Redux, Tailwind CSS
                   </li>
                   <li>
-                    <strong>Backend:</strong> Node.js, Express
+                    <strong>Backend:</strong> Node.js, Express, Socket.io,
+                    Cloudnairy, GraphQl
                   </li>
                   <li>
                     <strong>Database:</strong> MongoDB, PostgreSQL
                   </li>
                   <li>
-                    <strong>Authentication:</strong> Clerk Auth
+                    <strong>Authentication:</strong> Clerk, JWT, Bcrypt, Cookies
                   </li>
                   <li>
-                    <strong>API Development:</strong> RESTful APIs, GraphQL
+                    <strong>API Development:</strong> REST APIs
                   </li>
                 </ul>
               </CardContent>

@@ -7,6 +7,7 @@ import {
   Cursor,
   TypewriterHelper,
 } from "react-simple-typewriter";
+import { WhatsAppModal } from "./WhatsAppModal";
 
 export default function Header() {
   const [text]: [string, TypewriterHelper] = useTypewriter({
@@ -35,8 +36,8 @@ export default function Header() {
               </Button>
             </li>
             <li>
-              <Button variant="ghost" asChild>
-                <Link href="#contact">Contact</Link>
+              <Button variant="ghost" asChild size="icon">
+                <WhatsAppModal />
               </Button>
             </li>
           </ul>

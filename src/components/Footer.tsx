@@ -1,4 +1,4 @@
-import { File, Github, Linkedin } from "lucide-react";
+import { FileUser, Github, Linkedin } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -27,7 +27,7 @@ export default function Footer() {
             href="https://docs.google.com/document/d/1b13eRe799Kx1FjV_m4-RIS_v8ub9XXutojPEx_zHFHg/edit?usp=sharing"
             className="text-muted-foreground hover:text-primary"
           >
-            <File className="h-6 w-6" />
+            <FileUser className="h-6 w-6" />
             <span className="sr-only">Resume</span>
           </a>
         </div>
